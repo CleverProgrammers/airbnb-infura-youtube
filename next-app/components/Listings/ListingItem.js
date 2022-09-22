@@ -3,13 +3,10 @@ import { useState } from 'react'
 import Web3 from 'web3'
 import { StarIcon } from '@heroicons/react/20/solid'
 import { HeartIcon } from '@heroicons/react/24/outline'
-import { useAccount } from 'wagmi'
 import { useAppContext } from '../../context/context'
 
 const ListingItem = ({ item, setShowReserveListingModal }) => {
   const [priceInEth] = useState(Web3.utils.fromWei(item.pricePerDay))
-
-  const { address } = useAccount()
 
   const { setSelectedPropertyId } = useAppContext()
 

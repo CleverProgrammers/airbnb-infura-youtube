@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import { ConnectButton } from '@rainbow-me/rainbowkit'
 import {
   GlobeAmericasIcon,
   Bars3Icon,
@@ -66,8 +65,6 @@ const Header = ({
         <div className='border border-transparent cursor-pointer hover:bg-gray-100 rounded-full p-3'>
           <GlobeAmericasIcon className='h-5 w-5 transition-all duration-300 text-gray-800' />
         </div>
-
-        {true && <ConnectButton />}
       </div>
     </header>
   )
