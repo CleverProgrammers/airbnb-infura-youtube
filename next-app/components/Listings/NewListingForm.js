@@ -31,15 +31,6 @@ const NewListingForm = setShowNewListingModal => {
       })
   }
 
-  const onCreate = event => {
-    event.preventDefault()
-
-    const priceInWei = Web3.utils.toWei(pricePerDay, 'ether')
-    console.log(priceInWei)
-
-    addListing(name, propertyAddress, description, imgURL, priceInWei)
-  }
-
   const styles = {
     wrapper: `mt-2`,
     formWrapper: `grid grid-cols-1 gap-3`,
